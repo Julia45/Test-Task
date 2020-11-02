@@ -12,9 +12,7 @@
 </head>
 
 <body>
-
   <h1 class="title"><span class="logo">Bank</span> Support Portal</h1>
-
   <form id="app" @submit="checkForm" method="post" class="form">
     <div class="login-form-container">
       <div class="login-container">
@@ -26,7 +24,6 @@
         <div v-if="errors.username" class="error-message">{{ errors.username }}</div>
         <div v-if="approve.username" class="approve-username"><i class="fas fa-check"></i></div>
       </div>
-
 
       <div class="password-container">
         <label for="password"></label>
@@ -46,9 +43,7 @@
 
     </div>
   </form>
-
   <script src="script.js"></script>
-
 </body>
 
 </html>
