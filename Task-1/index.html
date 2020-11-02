@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style-mobile.css">
+  <link rel="stylesheet" href="styles/style-tablet.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/cbf673a7d4.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="hamburger">
+        <div class="header-navbar__hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="header-logo">CLOTH & FASHION</div>
+      <div class="header-cart">
+        <div class="header-login">LOGIN</div>
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+    </nav>
+
+    <div class="header-proposal">
+      <div class="header-proposal__container">
+        <div class="header-proposal__container-item">
+          <div><strong>PRETE GRATIS</strong> PARA COMPRAS ACIMA DE R$300,00</div>
+        </div>
+        <div class="header-proposal__container-item">
+          <div><strong>PRETE GRATIS</strong> PARA COMPRAS ACIMA DE R$400,00</div>
+        </div>
+        <div class="header-proposal__container-item">
+          <div><strong>PRETE GRATIS</strong> PARA COMPRAS ACIMA DE R$500,00</div>
+        </div>
+      </div>
+      <div class="header-proposal__dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+
+    <div class="main-pic-container">
+      <div class="slidepic-container">
+        <div class="slide-pic"></div>
+        <div class="slide-pic"></div>
+        <div class="slide-pic"></div>
+        <div class="slide-pic"></div>
+        <div class="slide-pic"></div>
+      </div>
+
+      <div class="header-text">
+        <span><strong>C&F</strong> Clothing</span>
+        <hr>
+        <span class="header-text__small">SPORTS & LIFESTYLE</span>
+        <button class="header-button">CONFIRA</button>
+      </div>
+
+      <div class="dot-container-pic">
+        <span class="dots active" onclick="currentSlidePic(1)" data-slide-to="0"></span>
+        <span class="dots" onclick="currentSlidePic(2)" data-slide-to="1"></span>
+        <span class="dots" onclick="currentSlidePic(3)" data-slide-to="2"></span>
+        <span class="dots" onclick="currentSlidePic(4)" data-slide-to="3"></span>
+        <span class="dots" onclick="currentSlidePic(5)" data-slide-to="4"></span>
+      </div>
+    </div>
+  </header>
+
+  <div class="content-wrapper">
+    <section class="top-product">
+      <h2 class="top-product__header">PRODUTOS EM DESTAQUE</h2>
+      <div class="top-products-slider">
+        <div class="slider-blur-left .mobile"></div>
+        <div class="top-products__wrapper">
+          <div class="top-products__item">
+            <i class="fas fa-tags"></i>
+            <p>20%</p>
+            <div>
+              <div class="top-products__item-buy">Comprar</div>
+              <img src="product.png" alt="" class="image">
+            </div>
+            <div class="top-products__item-details">
+              <div class="top-product__price-container">
+                <div class="top-product__oldprice-cross">R$88,88</div>
+                <div class="top-product__newprice">R$78,88</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="top-products__item">
+            <div>
+              <div class="top-products__item-buy">Comprar</div>
+              <img src="product-2.png" alt="" class="image">
+            </div>
+            <div class="top-products__item-details">
+              <div class="top-product__price-container">
+                <div class="top-product__oldprice">R$88,88</div>
+                <div class="top-product__newprice">2X R$44,44</div>
+              </div>
+            </div>
+          </div>
+          <div class="top-products__item">
+            <i class="fas fa-tags"></i>
+            <p>20%</p>
+            <div>
+              <div class="top-products__item-buy">Comprar</div>
+              <img src="product-3.png" alt="" class="image">
+            </div>
+            <div class="top-products__item-details">
+              <div class="top-product__price-container">
+                <div class="top-product__oldprice-cross">R$88,88</div>
+                <div class="top-product__newprice">R$78,88</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="top-products__item">
+            <div>
+              <div class="top-products__item-buy">Comprar</div>
+              <img src="product-4.png" alt="" class="image">
+            </div>
+            <div class="top-products__item-details">
+              <div class="top-product__price-container">
+                <div class="top-product__oldprice">R$88,88</div>
+                <div class="top-product__newprice">2X R$44,44</div>
+              </div>
+            </div>
+          </div>
+          <div class="top-products__item">
+            <i class="fas fa-tags"></i>
+            <p>20%</p>
+            <div>
+              <div class="top-products__item-buy">Comprar</div>
+              <img src="product-5.png" alt="" class="image">
+            </div>
+            <div class="top-products__item-details">
+              <div class="top-product__price-container">
+                <div class="top-product__oldprice-cross">R$88,88</div>
+                <div class="top-product__newprice">R$78,88</div>
+              </div>
+            </div>
+          </div>
+          <div class="top-products__item">
+            <div>
+              <div class="top-products__item-buy">Comprar</div>
+              <img src="product-6.png" alt="" class="image">
+            </div>
+            <div class="top-products__item-details">
+              <div class="top-product__price-container">
+                <div class="top-product__oldprice">R$88,88</div>
+                <div class="top-product__newprice">2X R$44,44</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-product__slider-control slider1__control_left"><i class="fas fa-chevron-left"></i> </div>
+        <div class="top-product__slider-control slider1__control_right"><i class="fas fa-chevron-right"></i></div>
+        <div class="slider-blur-right .mobile"></div>
+      </div>
+    </section>
+
+    <section class="all-products">
+      <div class="all-products__symbol">
+        <img src="symbol.png" alt="">
+      </div>
+      <div class="all-products__container">
+        <div class="all-products__container-item">
+          <div class="blur-pic">JAQUETAS</div>
+        </div>
+        <div class="all-products__container-item">
+          <div class="blur-pic">SHORTS</div>
+        </div>
+        <div class="all-products__container-item">
+          <div class="blur-pic">CORTA-VENTO</div>
+        </div>
+        <div class="all-products__container-item">
+          <div class="blur-pic">CAMISAS</div>
+        </div>
+        <div class="all-products__container-item">
+          <div class="blur-pic">CALCAS</div>
+        </div>
+        <div class="all-products__container-item">
+          <div class="blur-pic">CAMISETAS</div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="social">
+      <h2 class="social-title">GALERIA DO INSTAGRAM</h2>
+      <div class="social-photos__container">
+        <div class="show-slider-bur-left"></div>
+        <div class="social-slider">
+          <div class="social-photos__container-item">
+            <div class="blur">
+              <i class="fas fa-heart"></i>
+              <p>1,233 likes</p>
+            </div>
+          </div>
+          <div class="social-photos__container-item">
+            <div class="blur">
+              <i class="fas fa-heart"></i>
+              <p>1,567 likes</p>
+            </div>
+          </div>
+          <div class="social-photos__container-item">
+            <div class="blur">
+              <i class="fas fa-heart"></i>
+              <p>2,300 likes</p>
+            </div>
+          </div>
+          <div class="social-photos__container-item">
+            <div class="blur">
+              <i class="fas fa-heart"></i>
+              <p>8,789 likes</p>
+            </div>
+          </div>
+          <div class="social-photos__container-item">
+            <div class="blur">
+              <i class="fas fa-heart"></i>
+              <p>5,630 likes</p>
+            </div>
+          </div>
+        </div>
+        <div class="show-slider-bur-right"></div>
+      </div>
+    </section>
+
+
+    <section class="usage">
+      <h2 class="usage-title">QUEM USA</h2>
+      <div class="usage-photo__container">
+        <div class="show-slider-bur-left usage"></div>
+        <div class="usage-slider">
+          <div class="usage-photo__container-item">
+            <div class="blur">
+              <p>David Guetta</p>
+            </div>
+          </div>
+          <div class="usage-photo__container-item">
+            <div class="blur">
+              <p>Adam Jones</p>
+            </div>
+          </div>
+          <div class="usage-photo__container-item">
+            <div class="blur">
+              <p>Kive Taylor</p>
+            </div>
+          </div>
+          <div class="usage-photo__container-item">
+            <div class="blur">
+              <p>Andrew Minor</p>
+            </div>
+          </div>
+        </div>
+        <div class="show-slider-bur-right usage"></div>
+      </div>
+    </section>
+
+    <section class="actions">
+      <div class="actions-container">
+        <button class="actions-container__item">NEWSLETTER</button>
+        <button class="actions-container__item">NOME</button>
+        <button class="actions-container__item">ENDERECO DE EMAIL</button>
+        <button class="actions-container__item">CADASTRAR</button>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer-logo"><span>ene<span class="x">x</span>t</span>group</div>
+    <div class="footer-wrapper">
+      <div class="footer-list_container">
+        <div class="footer-list_container-item">SOBRE</div>
+        <div class="footer-list_container-item">CONTATO</div>
+        <div class="footer-list_container-item">TERMOS & CONDICOES</div>
+        <div class="footer-list_container-item">POLITICA DE PRICACIDADE</div>
+      </div>
+      <div class="footer-icons">
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram-square"></i>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

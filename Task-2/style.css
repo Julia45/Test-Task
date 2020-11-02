@@ -1,0 +1,144 @@
+body {
+  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 300;
+  font-stretch: normal;
+  box-sizing: border-box;
+}
+
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.login-button {
+  font-size: 18px;
+  background-color: rgb(54, 162, 193);
+  color: #FFFFFF;
+  letter-spacing: -0.18px;
+  border: none;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.forgot-pass-message {
+  letter-spacing: -0.12px;
+  font-size: 12px;
+  color: #666666;
+}
+
+.reset-pass-message {
+  color: rgb(54, 162, 193);
+}
+
+.form {
+  border-radius: 5.51px;
+  width: 440px;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(153, 153, 152, 33%);
+  margin: 0 auto;
+  height: 311px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  font-size: 14px;
+  letter-spacing: -0.14px;
+  color: #666666;
+  border-radius: 5px;
+  border: 1px solid rgba(153, 153, 152, 28%);
+  background-color: #FFFFFF;
+  width: 295px;
+  height: 40px;
+}
+
+.login-form-container {
+  text-align: left;
+  margin: 34px 0px 34px 0px;
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  color: #666666;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.logo {
+  color: rgb(54, 162, 193);
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#password {
+  z-index: 0;
+  padding-left: 40px;
+}
+
+.fa-lock {
+  position: absolute;
+  z-index: 1;
+  padding: 0px 15px;
+  top: 47px;
+  color: rgb(204, 204, 204);
+}
+
+.password-container {
+  position: relative;
+  padding-top: 34px;
+}
+
+.login-container {
+  position: relative;
+}
+
+.fa-user {
+  position: absolute;
+  z-index: 1;
+  padding: 0px 15px;
+  top: 15px;
+  color: rgb(204, 204, 204);
+}
+
+#login {
+  z-index: 0;
+  padding-left: 40px;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  padding: 4px;
+}
+
+.error-user,
+.error-password {
+  color: red;
+  position: absolute;
+  right: -15px;
+}
+
+.error-user {
+  top: 15px;
+}
+
+.error-password {
+  top: 47px;
+}
+
+.approve-password,
+.approve-username {
+  color: forestgreen;
+  position: absolute;
+  right: -20px;
+}
+
+.approve-password {
+  top: 47px;
+}
+
+.approve-username {
+  top: 15px;
+}
