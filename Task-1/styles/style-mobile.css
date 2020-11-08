@@ -47,6 +47,7 @@
   .header-navbar__item:nth-child(1) {
     background-color: black;
     color: white;
+    height: 50px;
   }
 
   .header-navbar__item a {
@@ -74,7 +75,6 @@
   .header-navbar__item:nth-child(2) {
     background-color: lightgrey;
     height: 50px;
-    border: none;
   }
 
   .header-navbar__item.search {
@@ -765,7 +765,7 @@
   }
 
   .actions-container {
-    margin: 0px 5px;
+    margin: 0px 15px;
   }
 
   .actions-container__item {

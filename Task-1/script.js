@@ -13,7 +13,6 @@ let closeShopCart = document.querySelector(".continue-shopping-button")
 function openMenu(e) {
   e.stopPropagation()
   headerList.style.display = "block";
-  hamburger.style.display = "none"
 }
 
 hamburger.addEventListener("click", openMenu);
@@ -21,7 +20,6 @@ hamburger.addEventListener("click", openMenu);
 
 function closeHamburger() {
   headerList.style.display = "none";
-  hamburger.style.display = "block"
 }
 
 menuCloseCross.addEventListener("click", closeHamburger)
@@ -86,13 +84,11 @@ function openCloseSubCategories(e) {
     subHeadContainer.style.display = "none";
     openCloseCategoria.innerHTML = "+"
     menuSocialIcons.style.display = "flex"
-    lastElem.style.borderBottom = "none"
 
   } else if (subHeadContainer.style.display === "none") {
     subHeadContainer.style.display = "block";
     openCloseCategoria.innerHTML = "-"
     menuSocialIcons.style.display = "none"
-    lastElem.style.borderBottom = "2px solid black"
   }
 }
 

@@ -40,7 +40,7 @@
   .header-navbar__item:nth-child(1) {
     background-color: black;
     color: white;
-    height: 44px;
+    height: 46px;
     font-size: 19px;
   }
 
@@ -107,13 +107,13 @@
 
   .header-navbar__item:nth-child(2) {
     background-color: lightgrey;
-    height: 50px;
+    height: 60px;
     border: none;
     border-right: 3px solid black;
   }
 
   .last {
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
   }
 
   .fa-times {
@@ -310,7 +310,10 @@
   }
 
   hr {
-    margin: 1px;
+    margin: 5px;
+    width: 250px;
+    background-color: black;
+    height: 2px;
   }
 
   .header-text__small {
@@ -512,6 +515,7 @@
     width: 100%;
     height: 8%;
     bottom: 5px;
+    padding-top: 3px;
     border-left: 5px solid white;
     border-right: 5px solid white;
     z-index: 1;
@@ -599,7 +603,7 @@
   .social-photos__container-item:hover .fa-heart,
   .social-photos__container-item:hover .active .fa-heart {
     display: block;
-    padding-top: 20%;
+    padding-top: 25%;
     color: white;
     font-size: 50px;
     transition: color 0.6s ease;
