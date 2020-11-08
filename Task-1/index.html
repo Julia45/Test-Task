@@ -22,12 +22,136 @@
           <span></span>
           <span></span>
         </div>
+
+        <ul class="header-navbar__list">
+          <li class="header-navbar__item">
+            <p>MENU</p>
+            <i class="fas fa-times"></i>
+          </li>
+          <li class="header-navbar__item">
+            <input type="text" class="header-navbar__item input" placeholder="O QUE ESTÁ PROCURANDO?">
+            <button class="header-navbar__item search"><i class="fas fa-search"></i> </button>
+          </li>
+          <li class="header-navbar__item">
+            <a class="header-navbar__link">SOBRE</a>
+            <div class="header-navbar__subcategories">+</div>
+          </li>
+
+          <li class="header-navbar__item">
+            <a class="header-navbar__link">COLEÇÕES</a>
+            <div class="header-navbar__subcategories">+</div>
+          </li>
+
+          <li class="header-navbar__item active-categoria">
+            <div class="">CATEGORIA</div>
+            <div class="header-navbar__subcategories active-icon">-</div>
+          </li>
+          <li class="header-navbar__subcategories-wrapper">
+            <ul class="header-navbar__subcategories-container">
+              <li class="header-navbar__subcategories-item">
+                <div>SUB CATEGORIA</div>
+                <div class="header-navbar__subcat">></div>
+              </li>
+              <li class="header-navbar__subcategories-item">
+                <div>SUB CATEGORIA</div>
+                <div class="header-navbar__subcat">></div>
+              </li>
+              <li class="header-navbar__subcategories-item">
+                <div>SUB CATEGORIA</div>
+                <div class="header-navbar__subcat">></div>
+              </li>
+              <li class="header-navbar__subcategories-item">
+                <div>SUB CATEGORIA</div>
+                <div class="header-navbar__subcat">></div>
+              </li>
+              <li class="header-navbar__subcategories-item">
+                <div>SUB CATEGORIA</div>
+                <div class="header-navbar__subcat">></div>
+              </li>
+            </ul>
+          </li>
+
+          <li class="header-navbar__item">
+            <a class="header-navbar__link">LOOKS</a>
+            <div class="header-navbar__subcategories">+</div>
+          </li>
+          <li class="header-navbar__item last">
+            <a class="header-navbar__link">CONTATO</a>
+            <div class="header-navbar__subcategories">+</div>
+          </li>
+          <li class="header-navbar__item active-icons">
+            <div class="header-navbar__social-media">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram-square"></i>
+            </div>
+          </li>
+        </ul>
       </div>
 
       <div class="header-logo">CLOTH & FASHION</div>
       <div class="header-cart">
         <div class="header-login">LOGIN</div>
         <i class="fas fa-shopping-cart"></i>
+        <div class="products-number">88</div>
+        <div class="shoping-cart__container">
+          <div class="shoping-cart__container-title">MEU CARRINHO</div>
+          <div class="shoping-cart__container-wrapper">
+
+            <div class="shoping-cart__container-item">
+              <img src="product-3.png" alt="">
+              <div class="shoping-cart__container-info">
+                <div class="shoping-cart__container_info-item">
+                  <div class="shoping-cart__container_info-title">Nome do Producto</div>
+                  <div><i class="far fa-window-close"></i></div>
+                </div>
+                <div class="shoping-cart__container_info-item">
+                  <div class="color"></div>
+                </div>
+                <div class="shoping-cart__container_info-item">
+                  <div class="items">
+                    <i class="far fa-minus-square"></i>
+                    <div class="amount">88</div>
+                    <i class="far fa-plus-square"></i>
+                  </div>
+                  <div class="price">R$88,88</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="shoping-cart__container-item">
+              <img src="product-3.png" alt="">
+              <div class="shoping-cart__container-info">
+                <div class="shoping-cart__container_info-item">
+                  <div class="shoping-cart__container_info-title">Nome do Producto</div>
+                  <div><i class="far fa-window-close"></i></div>
+                </div>
+                <div class="shoping-cart__container_info-item">
+                  <div class="color"></div>
+                </div>
+                <div class="shoping-cart__container_info-item">
+                  <div class="items">
+                    <i class="far fa-minus-square"></i>
+                    <div class="amount">88</div>
+                    <i class="far fa-plus-square"></i>
+                  </div>
+                  <div class="price">R$88,88</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="shoping-cart__container-total">
+            <div class="total">TOTAL</div>
+            <div>R$88,88</div>
+          </div>
+
+          <div class="shoping-cart__container-buttons">
+            <button class="continue-shopping-button">CONTINUAR COMPRANDO</button>
+            <button class="stop-shopping-button">CHECKOUT <i class="fas fa-chevron-right"></i></button>
+          </div>
+
+        </div>
       </div>
     </nav>
 
@@ -167,7 +291,9 @@
         <div class="top-product__slider-control slider1__control_right"><i class="fas fa-chevron-right"></i></div>
         <div class="slider-blur-right .mobile"></div>
       </div>
+
     </section>
+
 
     <section class="all-products">
       <div class="all-products__symbol">
@@ -187,7 +313,7 @@
           <div class="blur-pic">CAMISAS</div>
         </div>
         <div class="all-products__container-item">
-          <div class="blur-pic">CALCAS</div>
+          <div class="blur-pic">CALÇAS</div>
         </div>
         <div class="all-products__container-item">
           <div class="blur-pic">CAMISETAS</div>
@@ -271,8 +397,8 @@
     <section class="actions">
       <div class="actions-container">
         <button class="actions-container__item">NEWSLETTER</button>
-        <button class="actions-container__item">NOME</button>
-        <button class="actions-container__item">ENDERECO DE EMAIL</button>
+        <input type="text" class="actions-container__item" placeholder="NOME">
+        <input type="email" class="actions-container__item" placeholder="ENDEREÇO DE EMAIL">
         <button class="actions-container__item">CADASTRAR</button>
       </div>
     </section>
@@ -281,12 +407,12 @@
   <footer>
     <div class="footer-logo"><span>ene<span class="x">x</span>t</span>group</div>
     <div class="footer-wrapper">
-      <div class="footer-list_container">
-        <div class="footer-list_container-item">SOBRE</div>
-        <div class="footer-list_container-item">CONTATO</div>
-        <div class="footer-list_container-item">TERMOS & CONDICOES</div>
-        <div class="footer-list_container-item">POLITICA DE PRICACIDADE</div>
-      </div>
+      <ul class="footer-list_container">
+        <li class="footer-list_container-item"><a href="#">SOBRE</a></li>
+        <li class="footer-list_container-item"><a href="#">CONTATO</a></li>
+        <li class="footer-list_container-item"><a href="#">TERMOS & CONDIÇÕES</a></li>
+        <li class="footer-list_container-item"><a href="#">POLITICA DE PRIVACIDADE</a></li>
+      </ul>
       <div class="footer-icons">
         <i class="fab fa-twitter"></i>
         <i class="fab fa-facebook-f"></i>
